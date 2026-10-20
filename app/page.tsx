@@ -44,29 +44,23 @@ const stagger: Variants = {
 
 const areas = [
   {
-    title: "Aposentadorias", icon: Scale,
-    summary: "Seu histórico de trabalho merece uma análise cuidadosa para compreender os caminhos da aposentadoria.",
-    details: "O atendimento considera sua trajetória profissional e os documentos disponíveis para orientar os próximos passos de uma demanda de aposentadoria. Cada situação é analisada individualmente, com explicações claras sobre as possibilidades.",
-    topics: ["Análise do histórico contributivo", "Orientação sobre documentos", "Avaliação da demanda de aposentadoria", "Acompanhamento conforme o serviço contratado"],
+    title: "Direito de Família", icon: HeartHandshake,
+    summary: "Orientação para decisões que envolvem vínculos, cuidado e a reorganização da vida familiar.",
+    details: "Questões familiares pedem escuta e atenção às pessoas envolvidas. O atendimento começa pela compreensão da sua realidade e pela análise dos documentos, para esclarecer possibilidades e construir os próximos passos com responsabilidade.",
+    topics: ["Divórcio e dissolução de união estável","Guarda e convivência familiar","Pensão alimentícia","Partilha de bens"],
   },
   {
-    title: "BPC/LOAS", icon: HeartHandshake,
-    summary: "Escuta e orientação para pessoas idosas, pessoas com deficiência e suas famílias.",
-    details: "O atendimento sobre o Benefício de Prestação Continuada começa pela compreensão da realidade da pessoa e de sua família. A Dra. Fabiana analisa os documentos apresentados e esclarece as possibilidades e as providências relacionadas à demanda.",
-    topics: ["Escuta da pessoa e de sua família", "Análise da documentação apresentada", "Orientação sobre a demanda de BPC/LOAS", "Acompanhamento conforme o serviço contratado"],
+    title: "Inventários e Sucessões", icon: Scale,
+    summary: "Cuidado com a história da família e clareza para organizar a transmissão do patrimônio.",
+    details: "Lidar com a sucessão de um familiar envolve decisões sensíveis. A Dra. Fernanda Marra oferece orientação em inventários e questões sucessórias, com análise da situação familiar e patrimonial e explicações sobre as alternativas adequadas a cada caso.",
+    topics: ["Inventários e partilha de bens","Orientação aos herdeiros","Planejamento sucessório","Análise da documentação patrimonial"],
   },
   {
-    title: "Benefícios por incapacidade", icon: ShieldCheck,
-    summary: "Orientação para quem precisa compreender seus direitos diante de uma incapacidade temporária ou permanente.",
-    details: "Uma situação de incapacidade pede atenção ao histórico profissional e à documentação médica. O atendimento busca esclarecer a demanda e os caminhos possíveis para benefícios por incapacidade temporária ou permanente, conforme as particularidades do caso.",
-    topics: ["Compreensão do histórico de trabalho", "Análise dos documentos médicos disponíveis", "Orientação sobre a demanda previdenciária", "Definição das providências adequadas ao caso"],
-  },
-  {
-    title: "Pensão por morte", icon: HeartHandshake,
-    summary: "Acolhimento e informação para a família em um momento que pede atenção e cuidado.",
-    details: "Questões relacionadas à pensão por morte são tratadas com sensibilidade e atenção à história familiar. O atendimento considera os documentos e as particularidades da situação para explicar os caminhos possíveis e as providências adequadas ao caso.",
-    topics: ["Compreensão da situação familiar", "Análise dos documentos disponíveis", "Esclarecimento sobre a demanda de pensão", "Orientação sobre os próximos passos"],
-  },
+    title: "Direito Imobiliário", icon: ShieldCheck,
+    summary: "Atenção aos documentos e aos detalhes que importam nas decisões sobre seu imóvel.",
+    details: "O atendimento imobiliário considera os documentos, os interesses envolvidos e as particularidades da situação. O objetivo é oferecer clareza para decisões sobre imóveis, contratos e regularização patrimonial.",
+    topics: ["Análise de contratos imobiliários","Compra, venda e locação de imóveis","Regularização de imóveis","Orientação em questões de propriedade e posse"],
+  }
 ];
 
 function Heading({
@@ -200,8 +194,8 @@ export default function Home() {
                 href={contact}
                 target="_blank"
                 rel="noreferrer"
-                aria-label="WhatsApp da Dra. Fabiana Mota"
-                className="grid size-11 place-items-center border border-silver/40 text-silver transition-colors hover:bg-brand-900"
+                aria-label="WhatsApp da Dra. Fernanda Marra"
+                className="grid size-11 place-items-center border border-gold/40 text-gold transition-colors hover:bg-brand-900"
               >
                 <WhatsAppMark size={17} strokeWidth={1.7} />
               </a>
@@ -219,7 +213,7 @@ export default function Home() {
               aria-label={menuOpen ? "Fechar menu" : "Abrir menu"}
               aria-expanded={menuOpen}
               aria-controls="mobile-navigation"
-              className="grid size-11 shrink-0 place-items-center border border-silver/40 text-silver lg:hidden"
+              className="grid size-11 shrink-0 place-items-center border border-gold/40 text-gold lg:hidden"
               onClick={() => setMenuOpen((open) => !open)}
             >
               {menuOpen ? <X size={20} /> : <Menu size={20} />}
@@ -254,7 +248,7 @@ export default function Home() {
                     </a>
                   ))}
                   <a
-                    className="mt-3 inline-flex items-center justify-center gap-2 rounded-none bg-silver px-5 py-3.5 text-sm font-semibold text-brand-950"
+                    className="mt-3 inline-flex items-center justify-center gap-2 rounded-none bg-gold px-5 py-3.5 text-sm font-semibold text-brand-950"
                     href={whatsapp}
                     target="_blank"
                     rel="noreferrer"
@@ -283,14 +277,14 @@ export default function Home() {
                 variants={reveal}
                 className="max-w-[720px] font-display text-[2.25rem] leading-[1.18] tracking-[-0.025em] text-ink sm:text-[3rem] lg:text-[3.5rem]"
               >
-                Seu direito começa
-                <span className="block text-silver">com informação.</span>
+                Sua família. Seu patrimônio.
+                <span className="block text-gold">Nosso compromisso.</span>
               </motion.h1>
               <motion.p
                 variants={reveal}
                 className="mt-7 max-w-xl text-[15px] leading-7 text-ink-soft sm:text-base sm:leading-8"
               >
-                Aposentadoria, benefícios e pensão. Com a Dra. Fabiana Mota, você encontra orientação previdenciária com clareza e atenção à sua história, em Araxá, MG.
+                Família, Sucessões e Imobiliário. Orientação jurídica com escuta, clareza e atenção ao que importa para você, com a Dra. Fernanda Marra, em Sabará, MG.
               </motion.p>
               <motion.div
                 variants={reveal}
@@ -302,7 +296,7 @@ export default function Home() {
                   size="lg"
                   className="rounded-none"
                 >
-                  <WhatsAppMark size={17} /> Fale com a Dra. Fabiana
+                  <WhatsAppMark size={17} /> Fale com a Dra. Fernanda
                 </PrimaryButton>
                 <a
                   href="#atuacao"
@@ -325,19 +319,19 @@ export default function Home() {
                 </span>
                 <span className="inline-flex items-center gap-2">
                   <MessageCircle size={15} className="text-brand-700" />
-                  Direito Previdenciário
+                  Família, Sucessões e Imobiliário
                 </span>
                 <a href="#avaliacoes" className="inline-flex min-h-11 items-center gap-2 py-2 text-sm text-brand-700 underline underline-offset-4">
                   <ArrowUpRight size={15} aria-hidden="true" /> Conheça as avaliações
                 </a>
               </motion.div>
             </motion.div>
-            <motion.div initial={false} animate={{ opacity: 1 }} className="relative mx-auto w-full max-w-[310px] lg:ml-auto lg:mr-6">
+            <motion.div initial={false} animate={{ opacity: 1 }} className="relative mx-auto w-full max-w-[480px] lg:ml-auto">
               <figure className="hero-signature">
-                <Image src={brand.portrait} alt="Dra. Fabiana Mota em seu escritório" width={1170} height={2080} preload sizes="(max-width: 350px) 88vw, 310px" className="h-auto w-full" />
-                <figcaption className="mt-5 flex flex-col gap-2 border-t border-silver/40 pt-5 text-left leading-6 text-brand-100">
-                  <span className="font-display text-2xl text-silver">Dra. Fabiana Mota</span>
-                  <span className="text-xs leading-6">Advogada Previdenciária · Araxá, MG</span>
+                <Image src={brand.portrait} alt="Apresentação da Dra. Fernanda Marra, fundadora do Marra Araújo Advocacia e especialista em inventário" width={840} height={788} preload sizes="(max-width: 640px) 90vw, (max-width: 1023px) 480px, 44vw" className="h-auto w-full" />
+                <figcaption className="mt-5 flex flex-col gap-2 border-t border-gold/40 pt-5 text-left leading-6 text-brand-100">
+                  <span className="font-display text-2xl text-gold">Dra. Fernanda Marra</span>
+                  <span className="text-xs leading-6">Fundadora do Marra Araújo Advocacia · Sabará, MG</span>
                 </figcaption>
               </figure>
             </motion.div>
@@ -393,7 +387,7 @@ export default function Home() {
                 <span className="text-brand-700">Atuação com cuidado.</span>
               </Heading>
               <p className="max-w-[250px] pb-1 text-xs leading-6 text-ink-soft">
-                Aposentadorias, BPC/LOAS, benefícios por incapacidade e pensão. Conheça as frentes de atendimento.
+                Família, Sucessões e Imobiliário. Conheça as frentes de atuação do escritório.
               </p>
             </motion.div>
             <motion.div
@@ -446,19 +440,18 @@ export default function Home() {
 
         <section id="sobre" className="brand-about scroll-mt-28 bg-brand-950 py-20 sm:py-28 lg:py-32">
           <div className="mx-auto grid max-w-7xl items-center gap-12 px-5 sm:px-8 lg:grid-cols-[0.85fr_1.15fr] lg:gap-24 lg:px-12">
-            <figure className="mx-auto flex w-full max-w-[460px] flex-col justify-center border-y border-silver/30 py-12 sm:py-16 lg:mx-0">
+            <figure className="mx-auto flex w-full max-w-[460px] flex-col justify-center border-y border-gold/30 py-12 sm:py-16 lg:mx-0">
               <Image src={brand.logo} alt={brand.businessName} width={2172} height={724} sizes="(max-width: 640px) 90vw, 460px" className="h-auto w-full" />
               <figcaption className="mt-8 text-center text-sm leading-7 text-brand-100">Escuta, clareza e compromisso com seus direitos.</figcaption>
-              <Image src={brand.institutionalPhoto} alt="Identidade institucional da Dra. Fabiana Mota, advogada previdenciária: seu direito começa com informação" width={680} height={192} sizes="(max-width: 640px) 90vw, 460px" className="mt-10 h-auto w-full" />
             </figure>
             <div>
-              <Heading>Uma história de trabalho merece{" "}<span className="text-brand-700">ser ouvida.</span></Heading>
-              <p className="mt-6 max-w-xl text-[15px] leading-7 text-ink-soft">A Dra. Fabiana Mota é advogada especialista em Direito Previdenciário, em Araxá, Minas Gerais. Sua atuação é voltada à orientação de pessoas e famílias em questões de aposentadoria, benefícios e pensão.</p>
-              <p className="mt-4 max-w-xl text-[15px] leading-7 text-ink-soft">Cada trajetória tem suas particularidades. Por isso, o atendimento começa pela escuta e pela análise dos documentos, com explicações acessíveis para que você compreenda as possibilidades e os próximos passos.</p>
-              <div className="mt-7 flex flex-col items-start gap-2 border-t border-silver/30 pt-5">
-                <a href={brand.instagram} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-11 items-center gap-3 text-sm text-silver underline-offset-4 hover:underline">Conheça a Dra. Fabiana no Instagram<ArrowUpRight size={15} aria-hidden="true" /></a>
+              <Heading>Por trás de cada questão,{" "}<span className="text-brand-700">uma história.</span></Heading>
+              <p className="mt-6 max-w-xl text-[15px] leading-7 text-ink-soft">Fernanda Marra é advogada e fundadora do Marra Araújo Advocacia, em Sabará, Minas Gerais. Atua em Direito de Família, Sucessões e Imobiliário, com atenção às pessoas e às histórias por trás de cada questão.</p>
+              <p className="mt-4 max-w-xl text-[15px] leading-7 text-ink-soft">Presidente da Comissão de Direito das Famílias e das Sucessões da OAB, Fernanda alia sua atuação jurídica a uma escuta cuidadosa. O atendimento começa pela compreensão da sua realidade, com explicações acessíveis sobre as possibilidades e os próximos passos.</p>
+              <div className="mt-7 flex flex-col items-start gap-2 border-t border-gold/30 pt-5">
+                <a href={brand.instagram} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-11 items-center gap-3 text-sm text-gold underline-offset-4 hover:underline">Conheça a Dra. Fernanda no Instagram<ArrowUpRight size={15} aria-hidden="true" /></a>
               </div>
-              <a href={contact} target="_blank" rel="noopener noreferrer" className="about-link group mt-6 inline-flex min-h-11 items-center gap-2 border-b border-brand-700/40 py-2 text-sm font-semibold text-brand-800 transition-colors hover:text-brand-700">Converse com a Dra. Fabiana <ArrowUpRight size={16} /></a>
+              <a href={contact} target="_blank" rel="noopener noreferrer" className="about-link group mt-6 inline-flex min-h-11 items-center gap-2 border-b border-brand-700/40 py-2 text-sm font-semibold text-brand-800 transition-colors hover:text-brand-700">Converse com a Dra. Fernanda <ArrowUpRight size={16} /></a>
             </div>
           </div>
         </section>
@@ -483,11 +476,11 @@ export default function Home() {
               {[
                 [
                   "Primeiro, a sua história",
-                  "Conte sua situação pelo WhatsApp e receba informações para agendar um atendimento com a Dra. Fabiana em Araxá.",
+                  "Conte sua situação pelo WhatsApp e receba informações para agendar um atendimento com a Dra. Fernanda em Sabará.",
                 ],
                 [
                   "Depois, os documentos",
-                  "Seu histórico e os documentos apresentados são analisados com atenção às particularidades da sua demanda.",
+                  "Sua situação e os documentos apresentados são analisados com atenção às particularidades da sua demanda.",
                 ],
                 [
                   "Um caminho compreensível",
@@ -518,7 +511,7 @@ export default function Home() {
               {[
                 ["Como funciona o primeiro contato?", `Envie uma mensagem pelo WhatsApp ou ligue para ${brand.phone}. Conte brevemente sua situação para receber informações sobre o atendimento e os documentos iniciais necessários.`],
                 ["Onde fica o escritório?", `O escritório fica na ${brand.address}. Entre em contato para combinar sua visita.`],
-                ["Como agendar uma consulta?", "Fale com a Dra. Fabiana pelo WhatsApp ou por telefone. Você receberá informações sobre a disponibilidade, a modalidade do atendimento e os documentos iniciais para sua demanda."],
+                ["Como agendar uma consulta?", "Fale com a Dra. Fernanda pelo WhatsApp ou por telefone. Você receberá informações sobre a disponibilidade, a modalidade do atendimento e os documentos iniciais para sua demanda."],
                 ["Quais documentos devo separar?", "Os documentos variam conforme a situação. Documentos pessoais e registros relacionados à sua demanda podem ajudar na análise. No agendamento, você receberá orientação sobre o que apresentar para o seu caso."],
               ].map(([question, answer]) => (
                 <details key={question} className="group py-6">
@@ -537,7 +530,7 @@ export default function Home() {
               Confiança construída <span className="text-brand-700">no atendimento.</span>
             </Heading>
             <div className="border-y border-ink/15 py-8">
-              <h3 className="font-display text-2xl text-ink">Dra. Fabiana Mota no Google</h3>
+              <h3 className="font-display text-2xl text-ink">Dra. Fernanda Marra no Google</h3>
               <p className="mt-4 flex flex-wrap items-center gap-x-4 gap-y-2 text-sm leading-7 text-ink">
                 <span className="inline-flex items-center gap-2 font-semibold"><Star size={17} fill="currentColor" className="text-brand-700" aria-hidden="true" />{brand.googleRating.toFixed(1).replace(".", ",")} de 5</span>
                 <span className="text-ink-soft">{brand.googleReviewCount} avaliações no Google</span>
@@ -567,7 +560,7 @@ export default function Home() {
             <div>
               <Heading
 
-                description="Precisa de orientação sobre aposentadoria, BPC/LOAS, incapacidade ou pensão? Converse com a Dra. Fabiana sobre o atendimento."
+                description="Precisa de orientação sobre uma questão familiar, um inventário ou um imóvel? Converse com a Dra. Fernanda sobre o atendimento."
               >
                 Um primeiro contato com{" "}
                 <span className="text-brand-700">tranquilidade.</span>
@@ -579,7 +572,7 @@ export default function Home() {
                   size="lg"
                   className="rounded-none"
                 >
-                  <WhatsAppMark size={17} /> Fale com a Dra. Fabiana
+                  <WhatsAppMark size={17} /> Fale com a Dra. Fernanda
                 </PrimaryButton>
                 <a href={telephone} className="inline-flex min-h-11 items-center gap-2 text-sm text-brand-700 hover:text-brand-800"><Phone size={16} /> Ligue: {brand.phone}</a>
                 <a href={brand.instagram} target="_blank" rel="noopener noreferrer" className="contact-handle inline-flex min-h-11 max-w-full items-center gap-2 py-2 text-sm text-brand-700 hover:text-brand-800"><Camera size={16} /> {brand.instagramHandle}</a>
@@ -592,7 +585,7 @@ export default function Home() {
                   <MapPin size={21} strokeWidth={1.6} />
                 </span>
                 <div>
-                  <h3 className="font-display text-2xl text-ink">Encontre o escritório em Araxá</h3>
+                  <h3 className="font-display text-2xl text-ink">Encontre o escritório em Sabará</h3>
                 </div>
               </div>
               <p className="mt-6 text-sm font-semibold text-brand-700">{brand.businessName}</p>
@@ -649,7 +642,7 @@ export default function Home() {
                 />
               </div>
               <p className="mt-4 max-w-xs text-xs leading-6 text-ink-soft">
-                Advocacia Previdenciária. Informação, escuta e atenção aos seus direitos, em Araxá, MG.
+                Família, Sucessões e Imobiliário. Escuta, clareza e compromisso com seus direitos, em Sabará, MG.
               </p>
             </div>
             <div>
@@ -661,7 +654,7 @@ export default function Home() {
                   Áreas de atuação
                 </a>
                 <a className="footer-link" href="#sobre">
-                  Sobre a Dra. Fabiana
+                  Sobre a Dra. Fernanda
                 </a>
                 <a className="footer-link" href="#avaliacoes">
                   Perfil no Google

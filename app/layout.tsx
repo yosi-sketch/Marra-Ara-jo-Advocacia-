@@ -19,14 +19,14 @@ const bodyFont = Manrope({
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL;
 const metadataBase = siteUrl ? new URL(siteUrl) : undefined;
 const shareImage = brand.institutionalPhoto;
-const title = "Dra. Fabiana Mota | Advogada Previdenciária em Araxá";
-const description = "Seu direito começa com informação. Dra. Fabiana Mota, especialista em Direito Previdenciário em Araxá, MG. Aposentadorias, BPC/LOAS, incapacidade e pensão.";
+const title = "Marra Araújo Advocacia | Família, Sucessões e Imobiliário em Sabará";
+const description = "Dra. Fernanda Marra, fundadora do Marra Araújo Advocacia em Sabará, MG. Orientação em Direito de Família, inventários, Sucessões e Direito Imobiliário.";
 
 export const metadata: Metadata = {
   ...(metadataBase ? { metadataBase } : {}),
   title,
   description,
-  keywords: [brand.businessName, brand.name, "advogada em Araxá", "Direito Previdenciário", "BPC LOAS", "pensão por morte", "aposentadorias", "benefícios por incapacidade"],
+  keywords: [brand.businessName, brand.name, "advogada em Sabará", "Direito de Família", "inventário", "Direito das Sucessões", "Direito Imobiliário"],
   icons: { icon: [{ url: brand.logo, type: "image/png" }] },
   openGraph: {
     title,
@@ -38,8 +38,8 @@ export const metadata: Metadata = {
       ? [
           {
             url: shareImage,
-            width: 680,
-            height: 192,
+            width: 840,
+            height: 788,
             alt: brand.businessName,
           },
         ]
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#043b54",
+  themeColor: "#282c1a",
 };
 
 export default function RootLayout({

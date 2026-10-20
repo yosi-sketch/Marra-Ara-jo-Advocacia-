@@ -1,31 +1,24 @@
 {
-  "brand": "Dra. Fabiana Mota",
-  "method": "Média de pixels do logo com alpha >= 240, diferença máxima entre canais 25; agrupamentos por luminosidade. Azul secundário: pixel de fundo da peça institucional.",
-  "groups": [
-    {
-      "name": "graphite",
-      "min": 25,
-      "max": 85,
-      "count": 17494,
-      "representative": "#2b3236"
-    },
-    {
-      "name": "silver",
-      "min": 185,
-      "max": 220,
-      "count": 35801,
-      "representative": "#d0cbc4"
-    },
-    {
-      "name": "white",
-      "min": 230,
-      "max": 256,
-      "count": 64243,
-      "representative": "#f9f8f7"
-    }
-  ],
-  "bannerBackground": "#043b54",
-  "cssSilver": "#d0cbc4",
-  "cssPetrol": "#043b54",
-  "note": "Tokens de superfícies, texto e escala azul são variações tonais para contraste; o azul tem origem na peça institucional, não no logo."
+  "source": "public/marra-araujo-logo.png",
+  "method": "Amostragem de pixels opacos do PNG, agrupamento RGB em intervalos de 16; oliva predominante (32,32,16) e dourado luminoso (240,192,112). Tons suavizados e derivados para contraste e leitura.",
+  "palette": {
+    "ink": "#26291e",
+    "ink-soft": "#595e4e",
+    "paper": "#fcfaf5",
+    "mist": "#f6f3eb",
+    "fog": "#eae8dc",
+    "gold": "#e5b66e",
+    "dark-text": "#d5d8c7",
+    "brand-50": "#f4f5ed",
+    "brand-100": "#e5e8d9",
+    "brand-200": "#cdd3bc",
+    "brand-300": "#b4bd9c",
+    "brand-400": "#939e77",
+    "brand-500": "#75825a",
+    "brand-600": "#5c6943",
+    "brand-700": "#4d5937",
+    "brand-800": "#3c472c",
+    "brand-900": "#282c1a",
+    "brand-950": "#171e12"
+  }
 }

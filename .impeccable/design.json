@@ -1,93 +1,100 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-19T11:16:18.237Z",
-  "title": "Design System: Dra. Fabiana Mota — Advocacia Previdenciária",
+  "generatedAt": "2026-10-20T10:45:49.724Z",
+  "title": "Design System: Marra Araújo Advocacia",
   "extensions": {
     "colorMeta": {
-      "silver": {
-        "role": "primary",
-        "displayName": "Prata do logo",
-        "canonical": "#d0cbc4",
-        "tonalRamp": [
-          "#f9f8f7",
-          "#d0cbc4",
-          "#2b3236"
-        ]
-      },
-      "ink": {
-        "role": "neutral",
-        "displayName": "Grafite do logo",
-        "canonical": "#2b3236",
-        "tonalRamp": [
-          "#101f28",
-          "#2b3236",
-          "#4c606c",
-          "#c4d1d8",
-          "#e7edf0",
-          "#f4f6f7",
-          "#f9f8f7"
-        ]
-      },
       "brand-900": {
-        "role": "secondary",
-        "displayName": "Petróleo institucional",
-        "canonical": "#043b54",
+        "role": "primary",
+        "displayName": "Oliva institucional",
+        "canonical": "#282c1a",
         "tonalRamp": [
-          "#edf2f4",
-          "#dce4e8",
-          "#bfcbd1",
-          "#d0cbc4",
-          "#8199a5",
-          "#5d7b89",
-          "#37677b",
-          "#245970",
-          "#124a60",
-          "#043b54",
-          "#101f28"
+          "#f4f5ed",
+          "#cdd3bc",
+          "#939e77",
+          "#5c6943",
+          "#3c472c",
+          "#282c1a",
+          "#171e12"
         ]
+      },
+      "gold": {
+        "role": "secondary",
+        "displayName": "Dourado da marca",
+        "canonical": "#e5b66e"
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Marfim claro",
+        "canonical": "#fcfaf5"
+      },
+      "divider-footer": {
+        "role": "neutral",
+        "displayName": "Divisor do rodapé",
+        "canonical": "rgb(213 216 199 / 25%)"
       }
     },
     "typographyMeta": {
       "display-mobile": {
-        "displayName": "Marcellus",
-        "purpose": "Serifas romanas e proporções próximas do logo, peso400."
+        "displayName": "Título no celular",
+        "purpose": "Hero, Marcellus 400."
+      },
+      "display-desktop": {
+        "displayName": "Título no desktop",
+        "purpose": "Hero a partir de 1024px."
+      },
+      "headline": {
+        "displayName": "Título de seção",
+        "purpose": "Escala responsiva 2/2.5/3rem."
       },
       "body": {
-        "displayName": "Manrope",
-        "purpose": "Leitura e operação dos controles, pesos400–600."
+        "displayName": "Leitura",
+        "purpose": "Manrope em descrições."
       }
     },
     "shadows": [
       {
-        "name": "dialog",
-        "value": "0 18px 48px rgb(16 31 40 / 18%)",
-        "purpose": "Separação estrutural do diálogo."
+        "name": "card",
+        "value": "0 18px 48px rgb(23 30 18 / 18%)",
+        "purpose": "Profundidade da janela de serviço."
       }
     ],
     "motion": [
       {
-        "name": "signature-reveal",
-        "value": "900ms cubic-bezier(0.16, 1, 0.3, 1)",
-        "purpose": "Revelação por clip-path do retrato já visível; desativada com movimento reduzido."
+        "name": "navigation",
+        "value": "180ms ease",
+        "purpose": "Cor e sublinhado dos links."
       },
       {
-        "name": "state",
-        "value": "180–240ms ease",
-        "purpose": "Estados de navegação e controles."
+        "name": "button",
+        "value": "200ms",
+        "purpose": "Transição de cor da ação primária."
+      },
+      {
+        "name": "reveal",
+        "value": "680ms cubic-bezier(0.22, 1, 0.36, 1)",
+        "purpose": "Entrada de conteúdo."
+      },
+      {
+        "name": "signature",
+        "value": "900ms cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Revelação da peça real por clip-path."
+      },
+      {
+        "name": "dialog",
+        "value": "240ms",
+        "purpose": "Entrada e saída da janela de serviço."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "0.01ms",
+        "purpose": "CSS respeita prefers-reduced-motion; MotionConfig também usa a preferência do usuário."
       }
     ],
     "breakpoints": [
       {
-        "name": "logo-small",
-        "value": "360px"
-      },
-      {
         "name": "sm",
         "value": "640px"
-      },
-      {
-        "name": "md",
-        "value": "768px"
       },
       {
         "name": "lg",
@@ -97,76 +104,97 @@
   },
   "components": [
     {
-      "name": "Botão em fundo claro",
+      "name": "Ação primária",
       "kind": "button",
       "refersTo": "button-primary",
-      "description": "Contato principal sobre superfícies claras.",
-      "html": "<button class=\"ds-primary\">Fale com a Dra. Fabiana</button>",
-      "css": ".ds-primary{font-family:var(--font-sans,Manrope,system-ui,sans-serif);min-height:44px;padding:14px 24px;border:1px solid var(--color-brand-800,#124a60);border-radius:0;background:var(--color-brand-800,#124a60);color:#fff;font-size:14px;font-weight:600;cursor:pointer;transition:background .2s}.ds-primary:hover{background:var(--color-brand-700,#245970)}.ds-primary:focus-visible{outline:2px solid var(--color-brand-700,#245970);outline-offset:4px;}"
+      "description": "Contato sobre superfícies claras.",
+      "html": "<button class=\"ds-primary\">Fale com a Dra. Fernanda</button>",
+      "css": ".ds-primary{font-family:var(--font-body),Manrope,system-ui,sans-serif;display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:14px 24px;border:1px solid var(--color-brand-800,#3c472c);border-radius:0;background:var(--color-brand-800,#3c472c);color:white;font-size:14px;font-weight:600;transition:background 200ms,border-color 200ms}.ds-primary:hover{background:var(--color-brand-700,#4d5937);border-color:var(--color-brand-700,#4d5937)}.ds-primary:focus-visible{outline:2px solid var(--color-brand-700,#4d5937);outline-offset:4px}"
     },
     {
-      "name": "Botão em fundo escuro",
+      "name": "Ação dourada",
       "kind": "button",
-      "refersTo": "button-on-dark",
-      "description": "Ação prateada sobre petróleo ou grafite.",
-      "html": "<div class=\"ds-dark-surface\"><button class=\"ds-silver\">Fale com a Dra. Fabiana</button></div>",
-      "css": ".ds-dark-surface{padding:24px;background:var(--color-brand-950,#101f28)}.ds-silver{font-family:var(--font-sans,Manrope,system-ui,sans-serif);min-height:44px;padding:16px 20px;background:var(--color-silver,#d0cbc4);color:var(--color-brand-950,#101f28);border:1px solid var(--color-silver,#d0cbc4);border-radius:0;font-size:14px;font-weight:600;cursor:pointer;transition:background .2s}.ds-silver:hover{background:var(--color-brand-100,#dce4e8)}.ds-silver:focus-visible{outline:2px solid var(--color-silver,#d0cbc4);outline-offset:4px}"
+      "refersTo": "button-gold",
+      "description": "Ação em contexto oliva escuro.",
+      "html": "<button class=\"ds-gold\">Fale pelo WhatsApp</button>",
+      "css": ".ds-gold{font-family:var(--font-body),Manrope,system-ui,sans-serif;min-height:44px;padding:14px 24px;border:1px solid var(--color-gold,#e5b66e);border-radius:0;background:var(--color-gold,#e5b66e);color:var(--color-brand-950,#171e12);font-size:14px;font-weight:600;transition:background 200ms,border-color 200ms}.ds-gold:hover{background:var(--color-brand-100,#e5e8d9);border-color:var(--color-brand-100,#e5e8d9)}.ds-gold:focus-visible{outline:2px solid var(--color-gold,#e5b66e);outline-offset:4px}"
+    },
+    {
+      "name": "Ação de apoio",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "Link de endereço com borda discreta.",
+      "html": "<a class=\"ds-outline\" href=\"#contato\">Ver no Google Maps</a>",
+      "css": ".ds-outline{font-family:var(--font-body),Manrope,system-ui,sans-serif;display:inline-flex;align-items:center;min-height:44px;padding:12px 20px;border:1px solid rgb(38 41 30 / 15%);border-radius:0;color:var(--color-ink,#26291e);font-size:12px;font-weight:600;letter-spacing:.13em;text-transform:uppercase;text-decoration:none;transition:color 200ms,border-color 200ms}.ds-outline:hover{color:var(--color-brand-700,#4d5937);border-color:var(--color-brand-700,#4d5937)}.ds-outline:focus-visible{outline:2px solid var(--color-brand-700,#4d5937);outline-offset:4px}"
     },
     {
       "name": "Navegação",
       "kind": "nav",
       "refersTo": "navigation",
-      "description": "Links claros em cabeçalho escuro.",
-      "html": "<nav class=\"ds-nav\" aria-label=\"Exemplo de navegação\"><a href=\"#inicio\">Início</a><a href=\"#atuacao\">Atendimento</a><a href=\"#contato\">Contato</a></nav>",
-      "css": ".ds-nav{font-family:var(--font-sans,Manrope,system-ui,sans-serif);display:flex;flex-wrap:wrap;gap:28px;padding:16px 24px;background:var(--color-brand-950,#101f28)}.ds-nav a{display:inline-flex;align-items:center;min-height:44px;color:var(--color-brand-100,#dce4e8);font-size:14px;font-weight:600;text-decoration:none}.ds-nav a:hover{color:var(--color-silver,#d0cbc4);text-decoration:underline;text-underline-offset:8px}.ds-nav a:focus-visible{outline:2px solid var(--color-silver,#d0cbc4);outline-offset:4px}"
+      "description": "Links institucionais no cabeçalho escuro.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Navegação\"><a href=\"#atuacao\">Atendimento</a><a href=\"#sobre\">Sobre</a><a href=\"#contato\">Contato</a></nav>",
+      "css": ".ds-nav{font-family:var(--font-body),Manrope,system-ui,sans-serif;display:flex;flex-wrap:wrap;gap:28px;padding:16px;background:var(--color-brand-950,#171e12)}.ds-nav a{position:relative;padding:12px 0;color:var(--color-brand-100,#e5e8d9);font-size:14px;font-weight:600;text-decoration:none;transition:color 180ms ease}.ds-nav a::after{position:absolute;inset:auto 0 0;height:1px;content:'';background:var(--color-gold,#e5b66e);transform:scaleX(0);transform-origin:left;transition:transform 180ms ease}.ds-nav a:hover{color:var(--color-gold,#e5b66e)}.ds-nav a:hover::after{transform:scaleX(1)}.ds-nav a:focus-visible{outline:2px solid var(--color-gold,#e5b66e);outline-offset:4px}"
     },
     {
-      "name": "Detalhes de atendimento",
+      "name": "Cartão de endereço",
+      "kind": "card",
+      "refersTo": "contact-card",
+      "description": "Informação do escritório em superfície branca.",
+      "html": "<section class=\"ds-contact\"><h3>Encontre o escritório em Sabará</h3><p>Marra Araújo Advocacia</p><p>Entre em contato para agendar sua visita.</p></section>",
+      "css": ".ds-contact{font-family:var(--font-body),Manrope,system-ui,sans-serif;position:relative;padding:28px;border:1px solid rgb(38 41 30 / 10%);border-radius:0;background:white;color:var(--color-ink,#26291e)}.ds-contact::before{position:absolute;inset:0 0 auto auto;content:'';height:4px;width:112px;background:var(--color-brand-600,#5c6943)}.ds-contact h3{margin:0;font-family:var(--font-display-face),Marcellus,Georgia,serif;font-size:24px;font-weight:400;letter-spacing:-.025em}.ds-contact p{font-size:14px;line-height:28px;color:var(--color-ink-soft,#595e4e)}"
+    },
+    {
+      "name": "Janela de serviço",
       "kind": "custom",
-      "refersTo": "dialog",
-      "description": "Superfície de leitura dos diálogos de serviços.",
-      "html": "<section class=\"ds-dialog\" aria-label=\"Exemplo de detalhes\"><h2>Aposentadorias</h2><p>Seu histórico de trabalho merece uma análise cuidadosa.</p><a href=\"#contato\">Conversar sobre este atendimento</a></section>",
-      "css": ".ds-dialog{font-family:var(--font-sans,Manrope,system-ui,sans-serif);max-width:576px;padding:28px;background:var(--color-mist,#f4f6f7);color:var(--color-ink,#2b3236);border-radius:4px 4px 0 0;box-shadow:0 18px 48px rgb(16 31 40 / 18%)}.ds-dialog h2{font-family:var(--font-display,Marcellus,Georgia,serif);font-size:1.7rem;font-weight:400;letter-spacing:-.025em;line-height:1.25}.ds-dialog p{font-size:14px;line-height:28px;color:var(--color-ink-soft,#4c606c)}.ds-dialog a{display:inline-flex;align-items:center;min-height:44px;color:var(--color-brand-700,#245970);font-size:14px}.ds-dialog a:hover{text-underline-offset:4px}.ds-dialog a:focus-visible{outline:2px solid var(--color-brand-700,#245970);outline-offset:4px;}"
+      "refersTo": "service-dialog",
+      "description": "Conteúdo do modal; a aplicação fornece foco contido e fechamento por Escape.",
+      "html": "<section class=\"ds-dialog\" aria-label=\"Direito de Família\"><button class=\"ds-close\" aria-label=\"Fechar detalhes\">×</button><h2>Direito de Família</h2><p>Orientação para decisões que envolvem vínculos, cuidado e a reorganização da vida familiar.</p></section>",
+      "css": ".ds-dialog{font-family:var(--font-body),Manrope,system-ui,sans-serif;position:relative;padding:28px;background:var(--color-mist,#f6f3eb);color:var(--color-ink,#26291e);border-radius:4px 4px 0 0;box-shadow:var(--shadow-card,0 18px 48px rgb(23 30 18 / 18%))}.ds-dialog h2{padding-right:40px;font-family:var(--font-display-face),Marcellus,Georgia,serif;font-size:27.2px;font-weight:400;letter-spacing:-.025em}.ds-dialog p{font-size:14px;line-height:28px;color:var(--color-ink-soft,#595e4e)}.ds-close{position:absolute;right:20px;top:20px;width:44px;height:44px;background:transparent;border:1px solid rgb(38 41 30 / 15%);color:var(--color-ink,#26291e);font-size:22px}.ds-close:hover{color:var(--color-brand-700,#4d5937)}.ds-close:focus-visible{outline:2px solid var(--color-brand-700,#4d5937);outline-offset:4px}@media(min-width:640px){.ds-dialog{padding:40px;border-radius:0}}"
     },
     {
       "name": "Pergunta frequente",
       "kind": "custom",
-      "description": "Expansão nativa acessível por teclado.",
-      "html": "<details class=\"ds-faq\"><summary>Como agendar uma consulta?</summary><p>Fale com a Dra. Fabiana pelo WhatsApp ou por telefone.</p></details>",
-      "css": ".ds-faq{font-family:var(--font-sans,Manrope,system-ui,sans-serif);padding:24px 0;border-block:1px solid rgb(43 50 54 / 15%);color:var(--color-ink,#2b3236)}.ds-faq summary{min-height:44px;font-size:16px;font-weight:600;cursor:pointer}.ds-faq summary::marker{color:var(--color-brand-700,#245970)}.ds-faq summary:hover{color:var(--color-brand-700,#245970)}.ds-faq summary:focus-visible{outline:2px solid var(--color-brand-700,#245970);outline-offset:4px;}.ds-faq p{font-size:14px;line-height:28px;color:var(--color-ink-soft,#4c606c)}"
+      "refersTo": "faq",
+      "description": "Disclosure nativo com linha editorial fina.",
+      "html": "<details class=\"ds-faq\"><summary>Como funciona o primeiro contato?</summary><p>Envie uma mensagem pelo WhatsApp ou ligue para (31) 2601-0969.</p></details>",
+      "css": ".ds-faq{font-family:var(--font-body),Manrope,system-ui,sans-serif;padding:24px 0;border-top:1px solid rgb(38 41 30 / 15%);border-bottom:1px solid rgb(38 41 30 / 15%);color:var(--color-ink,#26291e)}.ds-faq summary{min-height:44px;cursor:pointer;font-size:16px;font-weight:600}.ds-faq summary::marker{color:var(--color-brand-700,#4d5937)}.ds-faq summary:hover{color:var(--color-brand-700,#4d5937)}.ds-faq summary:focus-visible{outline:2px solid var(--color-brand-700,#4d5937);outline-offset:4px}.ds-faq p{margin-top:16px;font-size:14px;line-height:28px;color:var(--color-ink-soft,#595e4e)}"
     }
   ],
   "narrative": {
-    "northStar": "Seu direito começa com informação.",
-    "overview": "Prata, grafite e branco extraídos do logo, com petróleo da peça institucional. Marcellus acompanha as serifas romanas; Manrope sustenta a leitura. Imagens reais integrais, formas retas e contraste claro/escuro.",
+    "northStar": "Oliva, dourado e clareza",
+    "overview": "A identidade real de Marra Araújo Advocacia orienta o sistema: oliva profundo, dourado e marfim. Marcellus complementa as capitulares romanas do logo; Manrope acompanha a assinatura ADVOCACIA e oferece leitura clara. A composição existente apresenta a Dra. Fernanda Marra e seu atendimento em Família, Sucessões e Imobiliário em Sabará, MG.",
     "keyCharacteristics": [
-      "Logo original integral",
-      "Prata e grafite amostrados",
-      "Petróleo institucional",
-      "Serifas romanas e leitura clara",
-      "Teclado e movimento reduzido"
+      "Logo e peça institucional reais integrais",
+      "Tipografia sóbria e espaço generoso",
+      "Geometria predominantemente reta",
+      "Estrutura e funções preservadas"
     ],
     "rules": [
       {
-        "name": "Regra do contraste",
-        "body": "Prata em contexto escuro; petróleo escuro para ações em contexto claro.",
+        "name": "Identidade integral",
+        "body": "Preservar logo e peça institucional sem recorte, recoloração ou substituição.",
         "section": "colors"
       },
       {
-        "name": "Regra do logo",
-        "body": "Preservar pixels, transparência e proporção3:1 sobre fundo escuro.",
-        "section": "colors"
+        "name": "Serifas romanas",
+        "body": "Marcellus 400 em títulos; Manrope em leitura e controles.",
+        "section": "typography"
+      },
+      {
+        "name": "Profundidade contida",
+        "body": "Alternar planos tonais e linhas; reservar sombra ao contexto implementado.",
+        "section": "elevation"
       }
     ],
     "dos": [
-      "Do preservar os anexos reais e suas proporções.",
-      "Do centralizar tokens em app/globals.css.",
-      "Do manter foco visível e alvos de toque."
+      "Do preservar foco, teclado e movimento reduzido.",
+      "Do usar dados de contato de app/lib/brand.ts.",
+      "Do manter o divisor do rodapé em rgb(213 216 199 / 25%)."
     ],
     "donts": [
-      "Don’t inventar credenciais, canais ou resultados.",
-      "Don’t atribuir o petróleo ao logo.",
-      "Don’t exigir animação para acessar conteúdo."
+      "Don't inventar e-mail, número de OAB, domínio, horários ou resultados.",
+      "Don't reintroduzir identidade de outro escritório.",
+      "Don't alterar a estrutura ou remover funções existentes."
     ]
   }
 }

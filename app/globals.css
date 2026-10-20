@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-/* Tailwind 4: prata e grafite do logo, azul-petróleo da peça institucional.
+/* Tailwind 4: verde-oliva e dourado amostrados do logo fornecido.
    A escala tonal e seus pares de contraste constam em DESIGN.md. */
 :root {
   color-scheme: light;
@@ -11,25 +11,25 @@
 @theme inline {
   --font-display: var(--font-display-face), "Marcellus", Georgia, serif;
   --font-sans: var(--font-body), "Manrope", system-ui, sans-serif;
-  --color-ink: #2b3236;
-  --color-ink-soft: #4c606c;
-  --color-paper: #f9f8f7;
-  --color-mist: #f4f6f7;
-  --color-fog: #e7edf0;
-  --color-silver: #d0cbc4;
-  --color-dark-text: #c4d1d8;
-  --color-brand-50: #edf2f4;
-  --color-brand-100: #dce4e8;
-  --color-brand-200: #bfcbd1;
-  --color-brand-300: #d0cbc4;
-  --color-brand-400: #8199a5;
-  --color-brand-500: #5d7b89;
-  --color-brand-600: #37677b;
-  --color-brand-700: #245970;
-  --color-brand-800: #124a60;
-  --color-brand-900: #043b54;
-  --color-brand-950: #101f28;
-  --shadow-card: 0 18px 48px rgb(16 31 40 / 18%);
+  --color-ink: #26291e;
+  --color-ink-soft: #595e4e;
+  --color-paper: #fcfaf5;
+  --color-mist: #f6f3eb;
+  --color-fog: #eae8dc;
+  --color-gold: #e5b66e;
+  --color-dark-text: #d5d8c7;
+  --color-brand-50: #f4f5ed;
+  --color-brand-100: #e5e8d9;
+  --color-brand-200: #cdd3bc;
+  --color-brand-300: #b4bd9c;
+  --color-brand-400: #939e77;
+  --color-brand-500: #75825a;
+  --color-brand-600: #5c6943;
+  --color-brand-700: #4d5937;
+  --color-brand-800: #3c472c;
+  --color-brand-900: #282c1a;
+  --color-brand-950: #171e12;
+  --shadow-card: 0 18px 48px rgb(23 30 18 / 18%);
 }
 html { scroll-padding-top: 6rem; scroll-behavior: smooth; }
 img { max-width: 100%; }
@@ -39,7 +39,7 @@ body {
   font-family: var(--font-body), "Manrope", system-ui, sans-serif;
   caret-color: var(--color-brand-700);
 }
-::selection { background: var(--color-silver); color: var(--color-brand-950); }
+::selection { background: var(--color-gold); color: var(--color-brand-950); }
 h1, h2 { text-wrap: balance; }
 .font-display { font-weight: 400; letter-spacing: -0.025em; }
 :is(h1, h2, h3).font-display { font-weight: 400; }
@@ -65,12 +65,12 @@ h1, h2 { text-wrap: balance; }
 .nav-link:hover::after { transform: scaleX(1); }
 .brand-hero .text-ink { color: var(--color-paper); }
 .brand-hero .text-ink-soft { color: var(--color-dark-text); }
-.brand-hero .text-brand-700 { color: var(--color-silver); }
+.brand-hero .text-brand-700 { color: var(--color-gold); }
 .brand-hero .border-ink\/10 { border-color: rgb(255 255 255 / 15%); }
-.brand-hero a.text-ink:hover { color: var(--color-silver); }
+.brand-hero a.text-ink:hover { color: var(--color-gold); }
 :is(.brand-hero, .brand-assurance, .brand-about, .brand-footer) .primary-button {
-  background: var(--color-silver);
-  border-color: var(--color-silver);
+  background: var(--color-gold);
+  border-color: var(--color-gold);
   color: var(--color-brand-950);
 }
 :is(.brand-hero, .brand-assurance, .brand-about, .brand-footer) .primary-button:hover {
@@ -81,18 +81,18 @@ h1, h2 { text-wrap: balance; }
 .brand-footer .footer-link { display: inline-flex; min-height: 44px; align-items: center; }
 .footer-link:hover { color: white; text-decoration: underline; text-underline-offset: 4px; }
 :focus-visible { outline: 2px solid var(--color-brand-700); outline-offset: 4px; }
-:is(.brand-footer, .bg-brand-950, .bg-brand-900) :focus-visible { outline-color: var(--color-silver); }
+:is(.brand-footer, .bg-brand-950, .bg-brand-900) :focus-visible { outline-color: var(--color-gold); }
 .brand-assurance { background: var(--color-brand-900); border-color: rgb(255 255 255 / 12%); }
 .brand-assurance .text-ink-soft { color: var(--color-dark-text); }
-.brand-assurance .text-brand-700 { color: var(--color-silver); }
+.brand-assurance .text-brand-700 { color: var(--color-gold); }
 .brand-assurance .border-ink\/10 { border-color: rgb(255 255 255 / 15%); }
 .brand-about { background: var(--color-brand-950); color: white; }
 .brand-about .text-ink { color: white; }
 .brand-about .text-ink-soft { color: var(--color-dark-text); }
-.brand-about :is(.text-brand-700, .text-brand-800) { color: var(--color-silver); }
+.brand-about :is(.text-brand-700, .text-brand-800) { color: var(--color-gold); }
 .brand-about .about-wordmark { color: white; }
-.brand-about .about-tenure { color: var(--color-silver); }
-.brand-about .about-link { border-color: var(--color-silver); }
+.brand-about .about-tenure { color: var(--color-gold); }
+.brand-about .about-link { border-color: var(--color-gold); }
 .brand-about .about-link:hover { color: white; }
 .brand-about figcaption { color: var(--color-dark-text); }
 .hero-signature {
@@ -103,8 +103,8 @@ h1, h2 { text-wrap: balance; }
   to { clip-path: inset(0); }
 }
 .brand-footer .text-ink-soft { color: var(--color-dark-text); }
-.brand-footer .text-brand-700 { color: var(--color-silver); }
-.brand-footer .border-ink\/15 { border-color: rgb(196 209 216 / 25%); }
+.brand-footer .text-brand-700 { color: var(--color-gold); }
+.brand-footer .border-ink\/15 { border-color: rgb(213 216 199 / 25%); }
 .contact-handle { overflow-wrap: anywhere; }
 .contact-handle svg { flex-shrink: 0; }
 ::-webkit-scrollbar { width: 9px; }
@@ -123,11 +123,11 @@ h1, h2 { text-wrap: balance; }
 }
 
 .brand-header .nav-link { color: var(--color-brand-100); }
-.brand-header .nav-link:hover { color: var(--color-silver); }
-.brand-header .nav-link::after { background: var(--color-silver); }
-.brand-header .primary-button { background: var(--color-silver); border-color: var(--color-silver); color: var(--color-ink); }
+.brand-header .nav-link:hover { color: var(--color-gold); }
+.brand-header .nav-link::after { background: var(--color-gold); }
+.brand-header .primary-button { background: var(--color-gold); border-color: var(--color-gold); color: var(--color-ink); }
 .brand-header .primary-button:hover { background: var(--color-brand-100); border-color: var(--color-brand-100); }
-.brand-header :focus-visible { outline-color: var(--color-silver); }
+.brand-header :focus-visible { outline-color: var(--color-gold); }
 #mobile-navigation :focus-visible { outline-color: var(--color-brand-700); }
 
 

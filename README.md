@@ -1,6 +1,6 @@
-# Dra. Fabiana Mota — Advocacia Previdenciária
+# Marra Araújo Advocacia
 
-Site institucional em pt-BR para Araxá, MG. Frentes de atendimento: aposentadorias, BPC/LOAS, benefícios por incapacidade e pensão por morte.
+Site institucional em português para a Dra. Fernanda Marra, em Sabará, MG. Família, Sucessões e Imobiliário.
 
 ## Executar
 
@@ -8,20 +8,14 @@ Site institucional em pt-BR para Araxá, MG. Frentes de atendimento: aposentador
 - Produção: npm run build e npm run start
 - Verificação: npm run lint -- app
 
-Next.js 16.3.5, React 19.2.8, Tailwind CSS 4. Leia AGENTS.md e os guias locais em node_modules/next/dist/docs antes de alterar APIs.
+Next.js 16.3.5, React 19, Tailwind 4. Leia AGENTS.md e os guias locais antes de alterar APIs.
 
-## Marca e conteúdo
+## Marca
 
-Dados e links em app/lib/brand.ts. Tokens Tailwind em app/globals.css por @theme inline, conforme Tailwind 4; não é necessário um tailwind.config separado. Marcellus e Manrope via next/font em app/layout.tsx. Marcellus acompanha as serifas romanas do logo; Manrope atende textos e controles.
+Tokens Tailwind centralizados no @theme inline de app/globals.css (Tailwind 4 dispensa tailwind.config). Marcellus nos títulos aproxima as capitulares serifadas do logo; Manrope no corpo complementa a assinatura ADVOCACIA. Logo e peça institucional originais em public, sem edição ou cortes. Paleta e contraste documentados em DESIGN.md e .impeccable/palette-source.json.
 
-Prata #d0cbc4, grafite #2b3236 e branco #f9f8f7 amostrados do logo. Azul-petróleo #043b54 extraído do fundo da peça institucional enviada pelo cliente. Tons derivados para leitura e contraste. Logo sobre fundo escuro, preservando seus pixels, proporções e transparência. Documentação visual em DESIGN.md; método de amostragem em .impeccable/palette-source.json.
+## Conteúdo e contato
 
-Assets: public/fabiana-mota-logo.png (2172 × 724), public/fabiana-mota-institucional.png (680 × 192) e public/fabiana-mota-retrato.jpg (1170 × 2080). Arquivos fornecidos pelo cliente; foto extraída de Instagram (1).zip. Sem cortes, recoloração ou retoques. Proveniência incorporada aos metadados; origens e SHA-256 em .impeccable/asset-origins.json.
+Dados em app/lib/brand.ts e avaliações em app/lib/reviews.ts. WhatsApp e telefone: (31) 2601-0969, confirmado pelo cliente. Instagram @marraaraujo.adv. Endereço em Sabará conforme material fornecido. Google: 5,0 e 26 avaliações no registro de 20/10/2026, sem integração ao vivo.
 
-WhatsApp: 5534991502835. Telefone: (34) 99150-2835. Instagram: @fabianamotaadvogada. Endereço: Av. Antônio Carlos, 265 — Sala 3 — Centro, Araxá — MG, 38183-083.
-
-Google: CID 7239841301722783520, conforme o material do cliente; 33 avaliações informadas em 19/10/2026, sem integração ao vivo. Nota agregada 5,0 e seis trechos literais com autoria em app/lib/reviews.ts. Não são atribuídas notas individuais.
-
-## Dados pendentes
-
-E-mail, número de OAB, domínio, horários completos e atendimento online não foram fornecidos. Configure NEXT_PUBLIC_SITE_URL quando houver um domínio real, para habilitar imagens de compartilhamento com URL absoluta.
+E-mail, inscrição OAB, domínio e horários completos não informados. Configure NEXT_PUBLIC_SITE_URL com o domínio real para habilitar a imagem de compartilhamento absoluta.
